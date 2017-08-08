@@ -200,7 +200,7 @@ export default class Field {
       return prev;
     }, []);
 
-    if (!fields.length || !this.vm || !this.vm.$el) return;
+    if (!fields.length || !this.vm) return;
 
     // must be contained within the same component, so we use the vm root element constrain our dom search.
     fields.forEach(({ selector, name }) => {
